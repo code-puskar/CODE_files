@@ -85,6 +85,21 @@ var a=[1,2,3];
 var a = {name:"hiru"};
 var x= [...a] ...=iske baadh jobhi likha hai uske value spread operators k jagah rakh do
 9.TRUTHY AND FALSY: 
+10.foreach loop: used during array handling 
+accessing each elements in array, it doesnt changes original array it only changes the imaginary copy of that array which is printed
+11. Objects ko loop  karne ke lia hota hai forin loop:
+var obj = {
+    name = "raju";
+    city  = "rajasthan ";
+}
+for(var key in obj{
+    console.log(key,obj[key]);
+}
+12.call back fnc is runned after a certain, alloted time:
+settimeout(function(){
+    console.log("milliseconds mein time hai!");  
+},2000);
 
+13.First class Fncs:
 
 */

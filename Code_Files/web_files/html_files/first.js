@@ -50,5 +50,32 @@ kill(12,13,14);*///argurment-real values during chalate waqt
 
 //ARRAY-Group of values.
 
-var arr=[1,2,3,4,5];
-arr[0];
+// var arr=[1,2,3,4,5];
+// arr[0];
+
+// objects hai ek bande ke details ko hold karna like structure in C
+/*1} blank obj : var a= {};
+2} filled obj : var car ={
+   age : 24,--------------->PROPERTies
+   room : nothing ,
+   fun:xy(){}<-----------------adding function makes it method
+}
+
+ACCESS---> car.age= 24;
+
+
+*/
+//###################################################################################################################################
+
+/*
+
+ADVANCE JAVA SCRIPT
+ 1. var function scopedd hota hai: u can use  variable any where in a function, eg; for loop mein declared i ko loop k bahar bhi use kar sakte hai 
+ 2. let braces scoped hota hai: u  can use only inside the declared bracket.eg; loop k bahar i nahi chalega.
+ 3. var adds itself to the window objects and let doesnt adds 
+
+
+
+
+
+*/

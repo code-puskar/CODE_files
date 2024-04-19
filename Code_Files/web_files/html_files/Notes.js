@@ -112,9 +112,38 @@ print----->wassup!
 14.object : var arr = [1,2,3,4];
 its not array its object u can give negative index
 
+15.higher order function: which accepts a function as a parameter.
+eg.1: function abcd(){
 
+}
+abcd(function(){})
 
+eg.2:function abcd(){
+    return function(){}
+}
+abcd()
 
+16.Constructor Functions:jab aapke paas  aisa koi bhi mauka ho jub aapko ek jaise property wale elements banane ho.
+---->"new"keyword matlab it will create a blank object
+eg: function abcd(){
+    this.age=12;
+}
+new abcd(){
+    age:12;
+}
+
+17.iife => immediately invoked function expression 
+eg: (function abcd(){
+       var private =12; <--------------- private value inside iife which cant be accessed without getter.
+       return{
+        getter:function(){   <-----------gets the value.
+            console.log(private);
+        },
+        setter:function(val){  <----------inputs value .
+            private=val;       <----------replace the value with getter value.
+        }
+       }
+})()
 
 
 

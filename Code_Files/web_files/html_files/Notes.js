@@ -100,6 +100,22 @@ settimeout(function(){
     console.log("milliseconds mein time hai!");  
 },2000);
 
-13.First class Fncs:
+13.First class Fncs:using function as a value.
+var a = function(){};<--------------------------------------in javascript u can do this.
+eg;
+function abcd(a){
+
+}
+abcd(function(){console.log("wassup!");})
+print----->wassup!
+
+14.object : var arr = [1,2,3,4];
+its not array its object u can give negative index
+
+
+
+
+
+
 
 */

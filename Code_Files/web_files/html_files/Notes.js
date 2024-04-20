@@ -29,7 +29,8 @@ console.log("DOD");
 // }
 
 // FUNCTIONS:
-//1.jub apka code app future mein chalana vhahte ho aur reuse karna hai ya phir wanna use with diiferent data
+//1.jub apka code app future mein chalana vhahte ho aur 
+//reuse karna hai ya phir wanna use with diiferent data
 //koi code ko likh kar naam dena
 
 // function kill(a){
@@ -37,13 +38,15 @@ console.log("DOD");
     
 // }
 // kill(12);
-/*function kill(a,b,c){//Parameters:jaha store hoti hai value------------------------------->functions
+/*function kill(a,b,c){//Parameters:jaha store hoti hai value
+    ------------------------------->functions
     console.log(a,b,c);
     
 }
 kill(12,13,14);*///argurment-real values during chalate waqt
 
-//push pop shift unshift: arr.push(x)----->add element arr.unshift(x)----->add at start arr.shift(x)----->remove from start
+//push pop shift unshift: arr.push(x)----->add element arr.unshift(x)
+//----->add at start arr.shift(x)----->remove from start
 //arr.splice(2,1): matlab 2nd position se 1 element gayab
 
 
@@ -70,9 +73,12 @@ ACCESS---> car.age= 24;
 /*
 
 ADVANCE JAVA SCRIPT
- 1. var function scopedd hota hai: u can use  variable any where in a function, eg; for loop mein declared i ko loop k bahar bhi use kar sakte hai 
- 2. let braces scoped hota hai: u  can use only inside the declared bracket.eg; loop k bahar i nahi chalega.
- 3. var adds itself to the window objects and let doesnt adds - Windows have its own features collection or local IN window
+ 1. var function scopedd hota hai: u can use  variable any where in
+  a function, eg; for loop mein declared i ko loop k bahar bhi use kar sakte hai 
+ 2. let braces scoped hota hai: u  can use only inside the declared bracket.
+ eg; loop k bahar i nahi chalega.
+ 3. var adds itself to the window objects and let doesnt adds 
+ - Windows have its own features collection or local IN window
  4. BROWSER context API- windows , stack and Heap Memory.
  5. STACK:jaise aate waise jaate 
  6.HEAP: var data is stored in heap.
@@ -86,7 +92,8 @@ var a = {name:"hiru"};
 var x= [...a] ...=iske baadh jobhi likha hai uske value spread operators k jagah rakh do
 9.TRUTHY AND FALSY: 
 10.foreach loop: used during array handling 
-accessing each elements in array, it doesnt changes original array it only changes the imaginary copy of that array which is printed
+accessing each elements in array, it doesnt changes original 
+array it only changes the imaginary copy of that array which is printed
 11. Objects ko loop  karne ke lia hota hai forin loop:
 var obj = {
     name = "raju";
@@ -123,7 +130,8 @@ eg.2:function abcd(){
 }
 abcd()
 
-16.Constructor Functions:jab aapke paas  aisa koi bhi mauka ho jub aapko ek jaise property wale elements banane ho.
+16.Constructor Functions:jab aapke paas  aisa koi bhi mauka 
+ho jub aapko ek jaise property wale elements banane ho.
 ---->"new"keyword matlab it will create a blank object
 eg: function abcd(){
     this.age=12;
@@ -134,7 +142,8 @@ new abcd(){
 
 17.iife => immediately invoked function expression 
 eg: (function abcd(){
-       var private =12; <--------------- private value inside iife which cant be accessed without getter.
+       var private =12; <--------------- private value inside iife which
+        cant be accessed without getter.
        return{
         getter:function(){   <-----------gets the value.
             console.log(private);
@@ -144,6 +153,24 @@ eg: (function abcd(){
         }
        }
 })()
+
+18.whenever we create an object it automatically gets proptotype property/helper property.
+19.Prototype and Inheritence: getting properties of parent element.
+
+Syntax:minorobject.__proto__= parentobject;
+
+20.call =>if u want to point out a function or an object toward
+ any element,basically assigning value to (this).
+21.Apply bind: 
+function abcd(val1,val2,val3){
+    console.log(this,val1,val2,val3);
+}
+
+var obj={age : 24};
+abcd.apply(obj,[1,2,3]);
+
+
+
 
 
 

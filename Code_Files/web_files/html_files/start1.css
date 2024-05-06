@@ -2,16 +2,33 @@
  margin :0%;
  padding: 0%;
  box-sizing: border-box;
-font-family: 'Gilroy';
+font-family: 'poppins';
 }html,
 body{
     height: 100%;
     width: 100%;
+    background-color: grey;
 }
-/* CSS NOTES:
-1.inline css,internal and external css: i}line mein css style tag use karna,(too hectic)|ii}another tag out then body, but it increase html file size|iii}another file is better,to use,and handle.
 
- SIZING: vw/vh sizing auto respected to different resolution devices 
-rem/em- font size manipulating.
+.img{
+   height: 50%;
+   width :80%;
+   margin-left: 10%;
+   margin-right: 10%;
+   margin-top:5%;  
+     border-radius: 10px;
+ 
+    
+}
+.card{
+    h3{
+        margin-left: 5%;
 
-*/
+    }
+    height: 460px;
+    width:280px;
+    margin-left: 36%;
+    border-radius: 10px;
+    margin-top: 20%;
+    background-color: white;
+}

@@ -11,22 +11,50 @@ body{
 }
 
 .img{
-   height: 50%;
-   width :80%;
-   margin-left: 10%;
-   margin-right: 10%;
-   margin-top:5%;  
-     border-radius: 10px;
+   height: 45vh;
+   width :100%;
+   padding: 2%;
+    
+     border-radius: 15px;
  
     
 }
+.spn{
+    padding: 5%;
+}
+.spn span{
+       padding:4px;
+        border:1px solid grey;
+        border-radius: 10px;
+        color: grey;
+       
+    
+}
+.spano{
+    text-align: center;}
+.spano button{
+    color: blue;
+  padding:4px;   
+  border-radius: 15px;
+  background-color:  rgba(71, 218, 255, 0.493);
+  border: none; 
+}
+
 .card{
+   
     h3{
+        margin-top: 3%;
         margin-left: 5%;
 
     }
-    height: 460px;
-    width:280px;
+    p{
+       padding: 5%;
+       color: grey;
+       
+
+    }
+    height: 640px;
+    width:340px;
     margin-left: 36%;
     border-radius: 10px;
     margin-top: 20%;

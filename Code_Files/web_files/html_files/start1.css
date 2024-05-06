@@ -11,8 +11,7 @@ body{
 /* CSS NOTES:
 1.inline css,internal and external css: i}line mein css style tag use karna,(too hectic)|ii}another tag out then body, but it increase html file size|iii}another file is better,to use,and handle.
 
-2.CSS SELECTORS:
-
-
+ SIZING: vw/vh sizing auto respected to different resolution devices 
+rem/em- font size manipulating.
 
 */

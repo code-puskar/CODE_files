@@ -23,7 +23,7 @@ int partition(int A[], int low, int high) {
     do {
         while (A[i] <= pivot && i <= high) {
             i++;
-        }
+        } 
         while (A[j] > pivot) {
             j--;
         }

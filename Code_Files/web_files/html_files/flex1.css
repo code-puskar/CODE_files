@@ -9,17 +9,21 @@ body{
     width: 100%;
 }
 .sec1{
-    display: flex;
-    align-items: start;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    flex-shrink: 1;
-    justify-content: space-around;
-.sec{  padding-top: 7px ;
-    height: 50px;
-       width:50px;
-        border: solid 2px black;
-    font-weight: bold;
-    }
+   display: grid;
+height: 100vh;
+ gap: 3rem;
+ grid-template-columns: 1fr 1fr 1.5fr;
+ grid-template-rows: 1fr 1fr;
+
+  
    
 }
+.sec{
+    display: flex;
+    align-items: center;
+  justify-content: center;
+background-color: antiquewhite;
+}
+.one{
+background-color: red;
+}  

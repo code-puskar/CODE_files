@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>BANK_FORM</title><link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,18 +15,18 @@
         <marquee align="left"> Best Offers are waiting for you!!</marquee>
         <br>
         <p>required fields *</p>
-        <p>name: *<input type="text" name="name"required></p>
-        <fieldset>
+        <p>name: *<input type="text" name="name" class="nm"></p>
+        <fieldset class="f2">
             <legend><h4>GENDER*</h4></legend>
         <p>
-            male: <input type="radio" name="gender"id="male">
+            Male: <input type="radio" name="gender"id="male">
         female: <input type="radio" name="gender"id="female"></p> 
     </fieldset>
-<fieldset><Legend><h3>ADDRESS</h3></Legend>
+<fieldset class="f1"><Legend><h3>ADDRESS</h3></Legend>
 <textarea name="address" id="address" cols="30" rows="10">//start here</textarea>
 </fieldset>
-<fieldset><legend><h3>PAYMENT INFORMATION</h3></legend>
-<p>Branch: <input  type="text" name="branch" id="branch"></p>
+<fieldset class="f3"><legend><h3>PAYMENT INFORMATION</h3></legend>
+<p>Branch: <input   type="text" name="branch" id="branch"></p>
   
 <p>Pin Code: <input type="text" name ="pin" id="pin"></p>
 <p>Email: <input type="email" name="mail" id="mail"></p>
@@ -43,7 +46,7 @@ district name:<input type="checkbox">Limda
 <input type="checkbox">kalyani
 </fieldset>
 <br>
-<input type="submit" value="Pay Now">
+<input class="pay" type="submit" value="Pay Now">
        
     </form>
 </body>

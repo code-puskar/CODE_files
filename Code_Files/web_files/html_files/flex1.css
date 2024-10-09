@@ -1,0 +1,29 @@
+* {
+ margin :0%;
+ padding: 0%;
+ box-sizing: border-box;
+font-family: 'Poppins';
+}html,
+body{
+    height: 100%;
+    width: 100%;
+}
+.sec1{
+   display: grid;
+height: 100vh;
+ gap: 3rem;
+ grid-template-columns: 1fr 1fr 1.5fr;
+ grid-template-rows: 1fr 1fr;
+
+  
+   
+}
+.sec{
+    display: flex;
+    align-items: center;
+  justify-content: center;
+background-color: antiquewhite;
+}
+.one{
+background-color: red;
+}  

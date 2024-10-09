@@ -1,0 +1,56 @@
+* {
+    margin :0%;
+    padding: 0%;
+    box-sizing: border-box;
+}html,
+body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;  /* Or any desired width */
+    height: 80%; /* Or any desired height */
+    background-color: red;
+    
+
+}
+.img_cont{
+    
+    position: absolute;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+.text {
+    overflow: hidden;
+    width: 400px;
+    height: 100px;
+    z-index: 999;
+    background-color: rgba(138, 41, 41, 0);
+    color: white;
+  
+    /* New styles for left-center alignment */
+    position: absolute;
+    top: 50%;
+    left: 0; /* Align to the left edge of the parent */
+    transform: translateY(-50%); /* Center vertically */
+    text-align: left; /* Align text content to the left within the element */
+  }
+  
+.text h1{
+    font-size: 6vw;
+    position:relative;
+}

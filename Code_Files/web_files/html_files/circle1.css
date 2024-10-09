@@ -1,0 +1,75 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Fallback for browsers without Poppins */
+  }
+  
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(54, 53, 53);
+    
+  }
+  header{
+    font-weight: bold;
+    color: white;
+   
+  }
+  /* Navigation */
+  .nav1 ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    padding: 0 15px;
+    color: white;
+    flex-wrap: wrap;
+  }
+  
+  /* Images (Responsive with Media Queries) */
+  .im1,
+  .im2 {
+    margin-right: 15px;
+   /* Adjust margin for spacing */
+    height: 200px;
+    width: 30%; /* Responsive width based on percentage */
+    border-radius: 20px;
+    float: left;
+  }
+
+  
+  /* Media Queries for Smaller Screens */
+  @media (max-width: 768px) {
+    .im1,
+    .im2 {
+      margin-top: 2vh;
+      margin-bottom:4vh; 
+     /* Images stack on top of each other for smaller screens */
+    }
+    .sec{
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+  }
+ 
+  /* Section */
+  .sec {
+  
+    padding: 30px;
+    display: flex;
+    border-radius: 20px;
+  }
+  
+  /* Section Text */
+  .sec1,
+  .sec2 {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+  }
+  

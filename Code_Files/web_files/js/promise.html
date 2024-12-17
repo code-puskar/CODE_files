@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+  console.log('This is Promises');
+  let prom1 = new Promise((resolve,reject)=>{
+    let a = Math.random();
+    if (a<0.5) {
+        reject("No random number was not supporting you")
+    }
+    else{
+        setTimeout(()=>{
+            console.log("yes i am done")
+            resolve("harry")
+        },3000)
+    }
+  })
+  prom1.then((a)=> {
+    console.log(a)
+  }).catch((err)=>{    //--------------> error handling 
+    console.log(err)
+  })
+
+
+    </script>
+</body>
+</html>

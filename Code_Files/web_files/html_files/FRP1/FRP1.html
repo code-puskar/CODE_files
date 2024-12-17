@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        .left {
+    display: flex; /* Use flexbox to align items horizontally */
+    align-items: center; /* Vertically center the items */
+    gap: 10px; /* Add space between the SVG and the text */
+}
+
+.left img {
+    width: 24px; /* Optional: Set a fixed width for the SVG */
+    height: 24px;
+}
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+        }
+        header {
+            background-color: black;
+        }
+        nav {
+            display: flex;
+            color: white;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .right button {
+           
+            background-color: rgb(48, 48, 48);
+            color: rgba(255, 255, 255, 0.874);
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            margin-left: 10px;
+            font-weight: 500;
+        }
+        .right button:hover {
+            background-color: rgb(155, 155, 155);
+            color: rgb(255, 255, 255);
+        }
+       .right button{
+        border-radius: 5px;
+            border: 0.2px inset white;
+        }
+        
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 columns */
+            grid-template-rows: repeat(3, auto); /* 3 rows */
+            gap: 20px; /* Space between grid items */
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .item {
+            background-color: #ffffff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .item h3 {
+            margin-top: 0;
+            color: #444;
+        }
+
+        .item p {
+            font-size: 14px;
+            line-height: 1.6;
+            margin: 0 0 10px 0;
+        }
+
+        .item a {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .item a:hover {
+            text-decoration: underline;
+        }
+    
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left"><img  src="frp.svg" alt="Logo">Abstract | Help Center</div>
+            <div class="right" >
+                <button type="submit">Submit a Request</button>
+                <button style="background-color: rgb(8, 81, 182); color: white;">Sign In</button>
+            </div>
+        </nav>
+    </header>
+    <div class="sec1" style=" height: 250px; display:flex;background-color: rgba(191, 158, 255, 0.546); flex-direction: column; justify-content: center; align-items: center;"><H1>HOW CAN WE HELP?</H1> <input  type="search" name="q" placeholder="Search..." style="padding: 8px; width: 48%; height: 50px; border-radius: 10px;"></div>
+    <div class="container">
+        <!-- Category 1 -->
+        <div class="item">
+            <h3><img style="display:flex; height: 60px; width: 60px; margin: 20px;" src="pie-chart-svgrepo-com.svg" alt="">Branches</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+            <a href="#">Learn More...</a>
+        </div>
+        <!-- Category 2 -->
+        <div class="item">
+            <h3><img style="display:flex; height: 60px; width: 60px; margin: 20px;" src="document-svgrepo-com.svg" alt="">Manage Your Accounts</h3>
+            <p>Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
+            <a href="#">Learn More...</a>
+        </div>
+        <!-- Category 3 -->
+        <div class="item">
+            <h3><img style="display:flex; height: 60px; width: 60px; margin: 20px;" src="histogram-svgrepo-com.svg" alt="">Manage organizations , teams and projects</h3>
+            <p>Maecenas faucibus mollis interdum. Morbi lectus risus, iaculis vel, suscipit quis, luctus non.</p>
+            <a href="#">Learn More...</a>
+        </div>
+        <!-- Category 4 -->
+        <div class="item">
+            <h3><img style="display:flex; height: 60px; width: 60px; margin: 20px;" src="set-up-svgrepo-com.svg" alt=""> Manage Billing</h3>
+            <p>Curabitur blandit mollis lacus. Vestibulum id ligula porta felis euismod semper.</p>
+            <a href="#">Learn More...</a>
+        </div>
+        <!-- Category 5 -->
+        <div class="item">
+            <h3><img style="display:flex; height: 60px; width: 60px; margin: 20px;" src="target-svgrepo-com.svg" alt="">Authenticate to Abstract</h3>
+            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam.</p>
+            <a href="#">Learn More...</a>
+        </div>
+        <!-- Category 6 -->
+        <div class="item">
+            <h3><img style="display:flex; height: 60px; width: 60px; margin: 20px;" src="upload-svgrepo-com.svg" alt="">Abstract Support</h3>
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.</p>
+            <a href="#">Learn More...</a>
+        </div>
+    </div>
+    <footer>
+        <div class="cont" style="background-color: black; color: white; display: flex; flex-direction: row; justify-content: space-evenly; padding: 20px;">
+            <!-- Column 1 -->
+            <div class="col" style="display: flex; flex-direction: column; gap: 5px;">
+                <h4 style="margin: 0 0 10px 0;">Abstract</h4>
+                <p style="margin: 0;">Start Trial</p>
+                <p style="margin: 0;">Pricing</p>
+                <p style="margin: 0;">Download</p>
+            </div>
+    
+            <!-- Column 2 -->
+            <div class="col" style="display: flex; flex-direction: column; gap: 5px;">
+                <h4 style="margin: 0 0 10px 0;">Resources</h4>
+                <p style="margin: 0;">Blog</p>
+                <p style="margin: 0;">Help Center</p>
+                <p style="margin: 0;">Release Notes</p>
+                <p style="margin: 0;">Status</p>
+            </div>
+    
+            <!-- Column 3 -->
+            <div class="col" style="display: flex; flex-direction: column; gap: 5px;">
+                <h4 style="margin: 0 0 10px 0;">Community</h4>
+                <p style="margin: 0;">Twitter</p>
+                <p style="margin: 0;">LinkedIn</p>
+                <p style="margin: 0;">Facebook</p>
+                <p style="margin: 0;">Dribble</p>
+                <p style="margin: 0;">Podcast</p>
+            </div>
+    
+            <!-- Column 4 -->
+            <div class="col" style="display: flex; flex-direction: column; gap: 5px;">
+                <h4 style="margin: 0 0 10px 0;">Company</h4>
+                <p style="margin: 0;">About Us</p>
+                <p style="margin: 0;">Careers</p>
+                <p style="margin: 0;">Legal</p>
+            </div>
+    
+            <!-- Contact Section -->
+            <div class="contact" style="display: flex; flex-direction: column; gap: 5px;">
+                <h3 style="margin: 0 0 10px 0;">Contact Us</h3>
+                <p style="margin: 0;">info@abstract.com</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
+

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/API/Element#mouse_events   MOUSE EVENTS--->
+    <div class="container">
+        <div class="box"> hey change me</div>
+    </div>
+    <button id="btn">Change content</button>
+    <script>
+let button = document.getElementById("btn")
+button.addEventListener("click",()=>{
+    alert("i was clicked yooo")
+    document.querySelector(".box").innerHTML="I was Unborn"
+})
+    </script>
+</body>
+</html>

@@ -4,8 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>.box{height: 50px;
+    width: 50px; 
+border-radius: 10px; margin:5px;}
+    </style>
 </head>
 <body>
+    <div class="container"><div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div></div>
+
     <!-- given 5 boxes assign a random color and a  random background to each using DOM -->
+<script>
+    let boxes = document.getElementsByClassName("box")
+    function getrandomcolor(){
+        let val1=Math.ceil(0+Math.random()* 255);
+        let val2=Math.ceil(0+Math.random()* 255);
+        let val3=Math.ceil(0+Math.random()* 255);
+        let val4=Math.random();
+        return `rgb(${val1}, ${val2}, ${val3},${val4})`
+    }
+    Array.from(boxes).forEach(e=>{
+        e.style.backgroundColor =getrandomcolor()
+        
+    })
+</script>
 </body>
 </html>

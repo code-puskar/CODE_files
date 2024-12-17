@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Example</title>
+    <style>
+        .card {
+            display: flex;
+            border: 2px solid black;
+            max-width: 900px;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4px;
+            margin: 10px auto;
+        }
+        .image {
+            margin-left: 4px;
+            position: relative;
+            width: 35%;
+            height: auto;
+            margin-right: 4px;
+        }
+        .image img {
+            margin: 2px;
+            width: 100%;
+            border-radius: 10px;
+        }
+        .capsule {
+            position: absolute;
+            bottom: 8px;
+            z-index: 10;
+            right: 5%;
+            background: #242020;
+            color: white;
+            border-radius: 4px;
+            font-size: 14px;
+            padding: 2px 6px;
+        }
+        .text {
+            width: 60%;
+        }
+        .text h1 {
+            margin: 0;
+            font-size: 18px;
+        }
+        .text p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7S9z11z0iO0l-iMdX6avPZjXfEw8Nr9kRAA&s" alt="">
+                <div class="capsule">31:06</div>
+            </div>
+            <div class="text">
+                <h1>Introduction to Backend | Sigma Web Development - Video 1</h1>
+                <p>CodeWithHarry · 134k Views · 3 months ago</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function createCard(title, cName, views, monthsOld, duration, thumbnail) {
+            let viewStr = views >= 1000000 
+                ? (views / 1000000).toFixed(1) + "M" 
+                : (views / 1000).toFixed(1) + "K";
+
+            let html = `
+                <div class="card">
+                    <div class="image">
+                        <img src="${thumbnail}" alt="">
+                        <div class="capsule">${duration}</div>
+                    </div>
+                    <div class="text">
+                        <h1>${title}</h1>
+                        <p>${cName} · ${viewStr} Views · ${monthsOld} months ago</p>
+                    </div>
+                </div>`;
+            
+            document.querySelector(".container").insertAdjacentHTML('beforeend', html);
+        }
+
+        // Example usage
+        createCard(
+            "Introduction Class",
+            "Puskar",
+            560000,
+            7,
+            "25:40",
+            "https://wallpapers.com/images/high/spectacular-4k-nighttime-cityscape-tzxu4v10emz99hy2.webp"
+        );
+    </script>
+</body>
+</html>
